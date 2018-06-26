@@ -1,8 +1,4 @@
 <?php 
-
-
-require_once "controllers/template.controller.php";
-
-$template = new TemplateController();
- 
- $template -> ctrTemplate();
+	require_once "controllers/TemplateController.php";
+	$template = new TemplateController();
+	$template->ctrTemplate();
