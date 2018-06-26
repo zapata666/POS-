@@ -49,11 +49,32 @@
   <!-- Left side column. contains the sidebar -->
   <?php include "modules/menu.php"; ?>
 
+<?php 
+ if (isset($_GET['ruta'])) {
+  if($_GET['ruta'] =='home' ||
+   $_GET['ruta'] =='users' ||
+   $_GET['ruta'] =='categories' || 
+   $_GET['ruta'] =='products' || 
+   $_GET['ruta'] =='customers' || 
+   $_GET['ruta'] =='sales' || 
+   $_GET['ruta'] =='sales-create' || 
+   $_GET['ruta'] =='sales-report'){
 
+    include 'modules/'.$_GET['ruta'].'.php';
+
+  } else{
+    include 'modules/404.php';
+  }
+
+}else{
+  include 'modules/home.php';
+}
+
+ ?>
   <!-- =============================================== -->
 
   <!-- Content Wrapper. Contains page content -->
-  <?php include "modules/content.php"; ?>
+  <?php include "modules/home.php"; ?>
   
   <!-- =============================================== -->
 
