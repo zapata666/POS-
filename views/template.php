@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +24,7 @@
   <link rel="stylesheet" href="views/dist/css/AdminLTE.css">
   <!-- AdminLTE Skins -->
   <link rel="stylesheet" href="views/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="views/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -36,6 +40,10 @@
   <script src="views/bower_components/fastclick/lib/fastclick.js"></script>
   <!-- AdminLTE App -->
   <script src="views/dist/js/adminlte.min.js"></script>
+  <!-- DataTables -->
+<script src="views/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="views/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  
 
 </head>
 <body class="hold-transition skin-blue sidebar-collapse sidebar-mini login-page">

@@ -22,6 +22,11 @@
           <button type="submit" class="btn btn-primary btn-block btn-flat">Log In</button>
         </div>
         <!-- /.col -->
+        <?php 
+        $login = new UserController();
+        $login->ctrlLoginUser();
+
+         ?>
       </div>
     </form>
 
